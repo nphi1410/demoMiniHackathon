@@ -1,0 +1,188 @@
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  background-color: #f8f8f8; /* Optional: Background color */
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: center; /* Center the calendar horizontally */
+  align-items: center; /* Center the calendar vertically */
+  margin: 20px; /* Optional: Space around the calendar */
+}
+
+h1 {
+  color: #ff69b4; /* Bright pink */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todo-form input {
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.todo-form input:focus {
+  border-color: #ff69b4;
+  outline: none;
+}
+
+.todo-form button {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.todo-form button:hover {
+  background-color: #ff4a91;
+  transform: translateY(-2px);
+}
+
+.todo-list {
+  margin-top: 2rem;
+}
+
+.todo-item {
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-5px);
+}
+
+.todo-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo-item .todo-label {
+  display: inline-block;
+  background-color: #ffb6c1;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem ;
+}
+
+.todo-item button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.todo-item button:hover {
+  background-color: #ff4a91;
+  transform: translateY(-2px);
+}
+
+.todo-item input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.todo-item input:focus {
+  border-color: #ff69b4;
+  outline: none;
+}
+
+.todo-item .comments {
+  margin-top: 1rem;
+}
+
+.todo-item .comments h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo-item .comments p {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  padding-left: 1rem;
+  border-left: 2px solid #ff69b4;
+  color: #555;
+}
+
+.todo-item .comments input {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.todo-item .comments input:focus {
+  border-color: #ff69b4;
+  outline: none;
+}
+
+.todo-item .comments button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item .comments button:hover {
+  background-color: #ff4a91;
+}
+
+.todo-dates {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
